@@ -22,7 +22,7 @@ namespace View {
         echo "MENU" . PHP_EOL;
         echo "1. Tambah Todo" . PHP_EOL;
         echo "2. Hapus Todo" . PHP_EOL;
-        echo "x. Hapus Todo" . PHP_EOL;
+        echo "x. Keluar" . PHP_EOL;
 
         $pilihan = InputHelper::input("Pilih");
 
