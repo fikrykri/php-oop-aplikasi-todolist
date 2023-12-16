@@ -42,6 +42,11 @@ namespace Service {
 
     function removeTodolist(int $number): void
     {
+      if ($this->todolistRepository->remove($number)) {
+        echo "SUKSES MENGHAPUS TODO" . PHP_EOL;
+      } else {
+        echo "GAGAL MENGHAPUS TODO" . PHP_EOL;
+      }
     }
   }
 }
